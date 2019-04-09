@@ -1,9 +1,10 @@
 let mongoose = require('mongoose')
 
-const server = 'cluster0-shard-00-00-gkksz.mongodb.net:27017'
-const database = 'test'
-const user = 'sandli'
-const password = 'mongodb'
+const server = 'ds221609.mlab.com:21609'
+const database = 'rest-api-workshop'
+const user = 'theoutlander'
+const password = 'fZsMGZXQMx8FCTgkBwgFtEvwD7ML'
+
 mongoose.connect(`mongodb://${user}:${password}@${server}/${database}`)
 
 let CustomerSchema = new mongoose.Schema({
